@@ -73,7 +73,7 @@ export default function Header() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{ color: isScrolled ? "black" : "white" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -97,7 +97,7 @@ export default function Header() {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography
                     textAlign="center"
-                    sx={{ color: isScrolled ? "black" : "white" }}
+                    
                   >
                     {page}
                   </Typography>
