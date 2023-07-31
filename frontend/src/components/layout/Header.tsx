@@ -58,7 +58,10 @@ export default function Header() {
   return (
     <AppBar
       position="fixed"
-      sx={{ background: isScrolled ? "white" : "transparent" }}
+      sx={{
+        background: isScrolled ? "white" : "transparent",
+        transition: "background 0.5s ease",
+      }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
