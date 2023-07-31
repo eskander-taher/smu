@@ -1,3 +1,5 @@
+/// <reference types="vite-plugin-svgr/client" />
+
 import react, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -95,12 +97,7 @@ export default function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    
-                  >
-                    {page}
-                  </Typography>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
