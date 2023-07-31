@@ -1,9 +1,13 @@
-import './App.css'
+import Layout from "./components/layout"
+import Hero from "./components/hero/Hero"
 
 function App() {
 
   return (
-    <h1>SMU</h1>
+    <Layout>
+      <Hero />
+      <section style={{height: "100vh", backgroundColor: "red"}}></section>
+    </Layout>
   )
 }
 

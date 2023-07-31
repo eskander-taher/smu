@@ -1,0 +1,24 @@
+.swiper-slide {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  user-select: none;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+}
